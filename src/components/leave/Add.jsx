@@ -22,7 +22,7 @@ const Add = () => {
 
     try {
         const response = await axios.post(
-          `http://localhost:3000/api/leave/add`,leave,
+          `https://israr-qayyum-api.vercel.app/api/leave/add`,leave,
           {
             headers: {
               "Authorization": `Bearer ${localStorage.getItem("token")}`,

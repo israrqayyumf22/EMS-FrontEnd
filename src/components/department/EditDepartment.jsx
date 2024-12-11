@@ -13,7 +13,7 @@ const EditDepartment = () => {
       setDepLoading(true);
       try {
         const responnse = await axios.get(
-          `http://localhost:3000/api/department/${id}`,
+          `https://israr-qayyum-api.vercel.app/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -44,7 +44,7 @@ const EditDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/department/${id}`,
+        `https://israr-qayyum-api.vercel.app/api/department/${id}`,
         department,
         {
           headers: {

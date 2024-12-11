@@ -17,7 +17,7 @@ const AdminSummary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const summary = await axios.get('http://localhost:3000/api/dashboard/summary', {
+        const summary = await axios.get('https://israr-qayyum-api.vercel.app/api/dashboard/summary', {
           headers : {
             "Authorization" : `Bearer ${localStorage.getItem('token')}`
           }

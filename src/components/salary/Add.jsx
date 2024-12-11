@@ -38,7 +38,7 @@ const Add = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:3000/api/salary/add`,
+        `https://israr-qayyum-api.vercel.app/api/salary/add`,
         salary,
         {
           headers: {

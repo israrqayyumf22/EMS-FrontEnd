@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://israr-qayyum-api.vercel.app/api/auth/login",
         { email, password }
       );
       if(response.data.success) {
