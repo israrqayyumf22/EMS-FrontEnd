@@ -12,7 +12,7 @@ const List = () => {
   const fetchLeaves = async () => {
     try {
       const response = await axios.get(
-        `https://israr-qayyum-api.vercel.app/api/leave/${id}/${user.role}`,
+        `https://ems-api-nu.vercel.app/api/leave/${id}/${user.role}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

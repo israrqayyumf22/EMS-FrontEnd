@@ -40,7 +40,8 @@ export const columns = [
 export const fetchDepartments = async () => {
   let departments;
   try {
-    const responnse = await axios.get("https://israr-qayyum-api.vercel.appapi/department", {
+    const responnse = await axios.get("https://ems-api-nu.vercel.app/api/department", {
+      // https://israr-qayyum-api.vercel.app
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
@@ -61,7 +62,7 @@ export const getEmployees = async (id) => {
   let employees;
   try {
     const responnse = await axios.get(
-      `hhttps://israr-qayyum-api.vercel.appapi/employee/department/${id}`,
+      `https://ems-api-nu.vercel.app/api/employee/department/${id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

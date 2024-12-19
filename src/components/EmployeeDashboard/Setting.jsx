@@ -27,7 +27,7 @@ const Setting = () => {
     } else {
       try {
         const response = await axios.put(
-          "https://israr-qayyum-api.vercel.app/api/setting/change-password",
+          "https://ems-api-nu.vercel.app/api/setting/change-password",
           setting,
           {
             headers: {

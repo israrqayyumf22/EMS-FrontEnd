@@ -9,7 +9,7 @@ const Table = () => {
 
   const fetchLeaves = async () => {
     try {
-      const responnse = await axios.get("https://israr-qayyum-api.vercel.app/api/leave", {
+      const responnse = await axios.get("https://ems-api-nu.vercel.app/api/leave", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
